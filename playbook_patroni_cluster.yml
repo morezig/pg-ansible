@@ -20,10 +20,10 @@
 
   roles:
     - role: setup_repo
-      # when: "'setup_repo' in lookup('edb_devops.edb_postgres.supported_roles', wantlist=True)"
+      when: "'setup_repo' in lookup('edb_devops.edb_postgres.supported_roles', wantlist=True)"
     - role: install_dbserver
-      # when: "'install_dbserver' in lookup('edb_devops.edb_postgres.supported_roles', wantlist=True)"
+      when: "'install_dbserver' in lookup('edb_devops.edb_postgres.supported_roles', wantlist=True)"
     - role: setup_etcd
-      # when: "'setup_etcd' in lookup('edb_devops.edb_postgres.supported_roles', wantlist=True)"
+      when: "'setup_etcd' in lookup('edb_devops.edb_postgres.supported_roles', wantlist=True)"
     - role: setup_patroni
-      # when: "'setup_patroni' in lookup('edb_devops.edb_postgres.supported_roles', wantlist=True)"
+      when: "'setup_patroni' in lookup('edb_devops.edb_postgres.supported_roles', wantlist=True)"
