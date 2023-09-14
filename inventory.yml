@@ -3,7 +3,5 @@ all:
   children:
     primary:
       hosts:
-        primary1:
-          ansible_host: 192.168.1.109
-          private_ip: 192.168.1.109
+        - 192.168.1.109
 
