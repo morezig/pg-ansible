@@ -3,5 +3,4 @@ all:
   children:
     pg-meta:
       hosts: { 192.168.1.109: { pg_seq: 1, pg_role: primary } }
-      etc_hosts_list: 192.168.1.109
-
+...
