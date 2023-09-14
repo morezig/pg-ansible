@@ -12,10 +12,11 @@
     - name: Initialize the user defined variables
       ansible.builtin.set_fact:
         pg_version: 14
-        pg_type: "EPAS"
+        pg_type: "PG"
         repo_token: "XXXXXX"
         disable_logging: false
         use_hostname: true
+        enable_edb_repo: false
 
   roles:
     - role: setup_repo
